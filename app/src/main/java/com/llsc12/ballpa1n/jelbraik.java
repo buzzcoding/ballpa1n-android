@@ -88,6 +88,7 @@ public class jelbraik extends Fragment {
 
 		executor.execute(() -> {
 			Looper.prepare();
+			currentStage = 0;
 			for (StageStep step : jbSteps) {
 				double waitTime = step.argInterval + randomDouble(-0.2d, 1d);
 				if (waitTime < 0) waitTime = 0;
@@ -109,7 +110,7 @@ public class jelbraik extends Fragment {
 
 				if (currentStage != max)
 					currentStage++;
-				updateStatus();
+				if (!jbSteps[currentStage].status.isEmpty()) updateStatus();
 			}
 
 			finished = true;
