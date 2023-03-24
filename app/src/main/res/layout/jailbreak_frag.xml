@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".jelbraik">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/ballpa1n_text_title"
+            android:text="@string/title"
+            android:textColor="@color/title_text"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/ballpa1n_text"
+            android:text="@string/description"
+            android:textSize="17sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/ballpa1n_text"
+            android:gravity="bottom"
+            android:text="@string/status"
+            android:textSize="17sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="6dp"
+            android:progress="0"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/console"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:height="100dp"
+            android:background="@drawable/rounded_console"
+            android:ems="10"
+            android:fontFamily="@font/ballpa1n_text"
+            android:gravity="start|top"
+            android:inputType="none"
+            android:isScrollContainer="true"
+            android:overScrollMode="always"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:scrollIndicators="left"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbarSize="2dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non eros risus. Aliquam erat volutpat. Morbi vulputate justo at commodo placerat. Integer in malesuada leo. Morbi volutpat ligula leo, nec vehicula orci commodo sed. In id condimentum lectus. Nulla luctus vehicula metus, sed dignissim libero tincidunt vitae. Phasellus consectetur lorem dictum, volutpat nulla sit amet, semper ipsum.\n\nPhasellus vitae nisl in dolor luctus eleifend. Vivamus vel mauris nec ex sagittis pulvinar at ornare massa. Donec viverra neque at nulla euismod accumsan. Nam ipsum felis, maximus ut orci vel, lobortis tincidunt ante. Vestibulum pharetra, diam sed posuere eleifend, est leo feugiat ipsum, a malesuada est nunc eu eros. Phasellus et imperdiet metus, nec faucibus orci. Aliquam semper odio ac nibh dignissim condimentum. Cras at euismod est, a dictum leo. Donec blandit sapien et tortor porta accumsan. "
+            android:textSize="11dp"
+            android:verticalScrollbarPosition="left" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/jailbreak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:fontFamily="@font/ballpa1n_text"
+                android:text="@string/jailbreak"
+                android:textAllCaps="false"
+                app:cornerRadius="100dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ballpa1n_text_poly"
+            android:gravity="center"
+            android:text="@string/disclaimer"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

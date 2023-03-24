@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ballpa1n</string>
+    <string name="jailbreak">Jailbreak</string>
+    <string name="jailbreaking">Jailbreaking</string>
+    <string name="respring">Respring</string>
+    <string name="title">ballpa1n</string>
+    <string name="description">Android 1.0 - %1$s Jailbreak</string>
+    <string name="disclaimer">Made by llsc12, ported by Buzz\nThis is a fake jailbreak, it\'s made for fun and because I was bored.</string>
+    <string name="status">Status\n(%1$d/%2$d) %3$s</string>
+</resources>

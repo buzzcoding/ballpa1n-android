@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_text">#000000</color>
+    <color name="button">#0B84FE</color>
+    <color name="button_greyed">#7EBDFF</color>
+    <color name="button_text_greyed">#B6D9FE</color>
+    <color name="console">#E5E5E5</color>
+    <color name="background">#FFFFFFFF</color>
+</resources>
